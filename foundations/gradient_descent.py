@@ -4,9 +4,16 @@ class Solution:
         # Derivative:         f'(x) = 2x
         # Update rule:        x = x - learning_rate * f'(x)
         # Round final answer to 5 decimal places
-        min_num = init
-        for _ in range(iterations):
-            der = 2* min_num
-            min_num = min_num - learning_rate * der
 
-        return round(min_num,5)
+
+
+        #  MAKE SURE ==> x_new = x_old - ((alpha) f'(x_old))    ---------> return this x_new
+
+        output = init
+
+        for _ in range(iterations):
+            der = 2 * output
+            output = output - learning_rate * der
+
+        return round(output,5)
+
