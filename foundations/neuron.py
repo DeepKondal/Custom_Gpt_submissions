@@ -17,5 +17,5 @@ class Solution:
         relu = np.maximum(0,z)               
         sig = 1 / (1 + np.exp(-z))  
 
-        return (np.round(sig,5)) if activation == 'sigmoid' else (np.round(relu,6))     
+        return (np.round(sig,5)) if activation == 'sigmoid' else (np.round(relu,5))     
 
