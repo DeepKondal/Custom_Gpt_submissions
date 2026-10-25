@@ -19,6 +19,7 @@ class Solution:
         
         b = 0.0
 
+        #this is no of samples we have i.e. number of data samples we have
         n = X.shape[0]
 
         for _ in range(epochs):
